@@ -13,10 +13,8 @@ while duplicate == False:
     for mod in mods:
         if mod[:1] == '+':
             newfreq = freq[-1] + int(mod[1:])
-            #print(line.rstrip() + ' = ' + str(freq))
         elif mod[:1] == '-':
             newfreq = freq[-1] - int(mod[1:])
-            #print(line.rstrip() + ' = ' + str(freq))
         else:
             print('ERROR')
             exit
